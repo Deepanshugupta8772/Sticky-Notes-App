@@ -1,8 +1,11 @@
 import NotesPage from './Pages/NotesPage.jsx';
+import NotesProvider from './context/NoteContext.jsx';
 function App() {
   return ( 
-    <div id='app'>
+    <div key='app'>
+      <NotesProvider>
         <NotesPage/>
+      </NotesProvider>
     </div>
   );
 }
